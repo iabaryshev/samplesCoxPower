@@ -10,6 +10,11 @@
 # to obtain results with a known precision.
 # The result is saved to "predicted_number_of_samples.txt" in the working directory.
 
+# Проверка и установка ggplot2
+if (!requireNamespace("ggplot2", quietly = TRUE)) {
+  install.packages("ggplot2")
+  library(ggplot2, character.only = TRUE)
+}
 
 # Шаг 1: Загрузка таблицы из файла sample.csv
 # Step 1: Loading the table from sample.csv file
